@@ -11,3 +11,13 @@ class IndexView(View):
         return render(request, 'index.html', {
             'all_blog': all_blog,
         })
+
+
+class AboutMeView(View):
+    def get(self, request):
+        return render(request, 'about.html')
+
+
+class FirstPage(View):
+    def get(self, request):
+        return render(request, 'index.html')
